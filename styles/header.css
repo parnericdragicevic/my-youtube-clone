@@ -1,0 +1,95 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.header__middle {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+}
+
+.header__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 20px;
+  width: 180px;
+  
+}
+.header__left__menu {
+  /* kad smo stavili ove margine itemsi su izašli iz containera, riješit ćemo na način da mu uklonim fiksni width */
+  margin-left: 24px;
+  margin-right: 24px;
+  height: 24px;
+}
+
+.header__left__logo {
+  height: 20px;
+}
+
+.header__middle__input {
+  flex: 1;
+  height: 36px;
+  font-size: 16px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+}
+
+.header__middle__search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 66px;
+  border: 1px solid rgb(192, 192, 192);
+  margin-left: -1px;
+  margin-right: 10px;
+}
+
+.header__middle__search-btn__icon {
+  height: 25px;
+  background-color: rgb(240, 240, 240);
+}
+
+.header__middle_voice-search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+}
+
+.header__middle__voice-search-btn__icon {
+  height: 24px;
+  background-color: rgb(240, 240, 240);
+}
+
+.header__middle__input::placeholder {
+  font-size: 16px;
+  padding-left: 10px;
+}
+.h-24px {
+  height: 24px;
+}
+
+.h-32px {
+  height: 32px;
+}
+
+
