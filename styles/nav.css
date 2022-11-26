@@ -1,0 +1,36 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav {
+  position: fixed;
+  width: 72px;
+  top: 55px;
+  bottom: 0;
+  left: 0;
+}
+
+.nav a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 74px;
+  text-decoration: none;
+  }
+
+.nav a img {
+  height: 24px;
+}
+
+.nav a:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.nav span {
+  font-family: Roboto, Arial;
+  font-size: 10px;
+}
+
+

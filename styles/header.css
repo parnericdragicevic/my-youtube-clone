@@ -1,7 +1,13 @@
 .header {
   display: flex;
   justify-content: space-between;
- 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 55px;
+  border-bottom: 1px solid rgb(228, 228, 228);
+  background-color: white;
 }
 
 .header__left {
@@ -17,6 +23,7 @@
   margin-left: 70px;
   margin-right: 35px;
   max-width: 500px;
+
 }
 
 .header__right {
@@ -26,10 +33,12 @@
   flex-shrink: 0;
   margin-right: 20px;
   width: 180px;
-  
+}
+
+.header__right__upload {
+  position: relative;
 }
 .header__left__menu {
-  /* kad smo stavili ove margine itemsi su izašli iz containera, riješit ćemo na način da mu uklonim fiksni width */
   margin-left: 24px;
   margin-right: 24px;
   height: 24px;
@@ -53,11 +62,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   height: 40px;
-  width: 66px;
+  width: 66px;a
   border: 1px solid rgb(192, 192, 192);
   margin-left: -1px;
   margin-right: 10px;
+}
+
+
+
+.header__middle__voice-search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
 }
 
 .header__middle__search-btn__icon {
@@ -65,31 +88,68 @@
   background-color: rgb(240, 240, 240);
 }
 
-.header__middle_voice-search-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  width: 40px;
-  border-radius: 20px;
-  border: none;
+.tooltiptext {
+ position: absolute;
+ visibility: hidden;
+ cursor: pointer;
+ margin-top: 70px;
+ font-size: 12px;
+ padding: 4px 4px;
+ border-radius: 2px;
+ background-color: grey;
+ color: white;
 }
+
+.header__middle__search-btn:hover .tooltiptext {
+ visibility: visible; }
+
+    	
+.header__middle__voice-search-btn:hover .tooltiptext {
+  visibility: visible;
+}
+
+.header__right__upload:hover .tooltiptext {
+  visibility: visible;
+}
+
+.header__right__app-parent:hover .tooltiptext {
+  visibility: visible;
+}
+
+.header__right__notification:hover .tooltiptext {
+  visibility: visible;
+}
+
+.header__right__current-user-parent:hover .tooltiptext {
+  visibility: visible;
+}
+
+.header__right__notification {
+  position: relative;
+}
+
+.counter {
+  position: absolute;
+    width: 6px;
+    height: 13px;
+    margin-left: 10px;
+    margin-top: -33px;
+    padding: 2px 5px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-size: 11px;
+}
+
 
 .header__middle__voice-search-btn__icon {
   height: 24px;
   background-color: rgb(240, 240, 240);
 }
 
+
+
 .header__middle__input::placeholder {
   font-size: 16px;
   padding-left: 10px;
 }
-.h-24px {
-  height: 24px;
-}
-
-.h-32px {
-  height: 32px;
-}
-
-

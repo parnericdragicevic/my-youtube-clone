@@ -5,50 +5,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" href="./images/favicon/youtube.ico">
+    <link rel="shortcut icon" href="./images/favicon/youtube.ico" />
     <title>My youtube clone</title>
   </head>
   <body>
-
-    <nav>
-      
-    </nav>
     <header class="header">
       <section class="header__left">
-        <img class="header__left__menu" src="./images/icons/hamburger-menu.svg" alt="" />
-        <img class="header__left__logo" src="./images/icons/youtube-logo.svg" alt="" />
+        <img
+          class="header__left__menu"
+          src="./images/icons/hamburger-menu.svg"
+          alt=""
+        />
+        <img
+          class="header__left__logo"
+          src="./images/icons/youtube-logo.svg"
+          alt=""
+        />
       </section>
 
       <section class="header__middle">
         <input class="header__middle__input" type="text" placeholder="Search" />
         <button class="header__middle__search-btn">
-          <img class="header__middle__search-btn__icon" src="./images/icons/search.svg" alt="">
+          <img
+            class="header__middle__search-btn__icon"
+            src="./images/icons/search.svg"
+            alt=""
+          />
+          <div class="tooltiptext">Search</div>
         </button>
-        <button class="header__middle_voice-search-btn">
-          <img class="header__middle__voice-search-btn__icon" src="./images/icons/voice-search-icon.svg" alt="">
+
+        <button class="header__middle__voice-search-btn">
+          <img
+            class="header__middle__voice-search-btn__icon"
+            src="./images/icons/voice-search-icon.svg"
+            alt=""
+          />
+          <div class="tooltiptext">Search with your voice</div>
         </button>
       </section>
 
       <section class="header__right">
         <div class="header__right__upload">
-          <img class="header__right__upload__icon h-24px" src="./images/icons/upload.svg" alt="">
+          <img
+            class="header__right__upload__icon h-24px"
+            src="./images/icons/upload.svg"
+            alt=""
+          />
+          <div class="tooltiptext m-4">Create</div>
         </div>
-        <img class="header__right__apps h-24px" src="./images/icons/youtube-apps.svg" alt="">
+        <div class="header__right__app-parent">
+          <img
+            class="header__right__apps h-24px"
+            src="./images/icons/youtube-apps.svg"
+            alt=""
+          />
+
+          <div class="tooltiptext m-4">Youtube apps</div>
+        </div>
+
         <div class="header__right__notification">
-          <img class="header__right__notification__icon h-24px" src="./images/icons/notifications.svg" alt="">
+          <img
+            class="header__right__notification__icon h-24px"
+            src="./images/icons/notifications.svg"
+            alt=""
+          />
+          <div class="tooltiptext m-4">Notifications</div>
+          <div class="counter">5</div>
         </div>
-        <img class="header__right__current-user h-32px" src="./images/channel-pictures/my-channel.png" alt="">
-      
-      
+
+        <div class="header__right__current-user-parent">
+          <img
+            class="header__right__current-user h-32px"
+            src="./images/channel-pictures/my-channel.png"
+            alt=""
+          />
+          <div class="tooltiptext m-4">My channel</div>
+
+        </div>
       </section>
     </header>
+
+    <nav class="nav">
+      <a href="#">
+        <img src="./images/icons/home.svg" alt="" />
+        <span>Home</span>
+      </a>
+
+      <a href="#">
+        <img src="./images/icons/explore.svg" alt="" />
+        <span>Explore</span>
+      </a>
+      <a href="#">
+        <img src="./images/icons/subscriptions.svg" alt="" />
+        <span>Subscriptions</span>
+      </a>
+      <a href="#">
+        <img src="./images/icons/originals.svg" alt="" />
+        <span>Originals</span>
+      </a>
+      <a href="#">
+        <img src="./images/icons/youtube-music.svg" alt="" />
+        <span>Youtube Music</span>
+      </a>
+      <a href="#">
+        <img src="./images/icons/library.svg" alt="" />
+        <span>Library</span>
+      </a>
+    </nav>
     <main class="main-grid">
       <section class="section">
-        <img
-          class="section__video-preview"
-          src="./images/thumbnails/thumbnail-1.webp"
-          alt=""
-        />
+        <div class="section-img-time">
+          <img
+            class="section__video-preview"
+            src="./images/thumbnails/thumbnail-1.webp"
+            alt=""
+          />
+        
+          <div class="section__time">09:09</div>
+        </div>
+
         <div class="section__video-info">
           <img
             class="section__video-info__avatar"
@@ -64,11 +139,15 @@
       </section>
 
       <section class="section">
-        <img
-          class="section__video-preview"
-          src="./images/thumbnails/thumbnail-2.webp"
-          alt=""
-        />
+        <div class="section-img-time">
+          <img
+            class="section__video-preview"
+            src="./images/thumbnails/thumbnail-2.webp"
+            alt=""
+          />
+          <div class="section__time">10:00</div>
+        </div>
+
         <div class="section__video-info">
           <img
             class="section__video-info__avatar"
@@ -84,11 +163,15 @@
       </section>
 
       <section class="section">
-        <img
-          class="section__video-preview"
-          src="./images/thumbnails/thumbnail-3.webp"
-          alt=""
-        />
+        <div class="section-img-time">
+          <img
+            class="section__video-preview"
+            src="./images/thumbnails/thumbnail-3.webp"
+            alt=""
+          />
+          <div class="section__time">11:11</div>
+        </div>
+
         <div class="section__video-info">
           <img
             class="section__video-info__avatar"
@@ -102,12 +185,16 @@
           </div>
         </div>
       </section>
+
       <section class="section">
-        <img
-          class="section__video-preview"
-          src="./images/thumbnails/thumbnail-4.webp"
-          alt=""
-        />
+        <div class="section-img-time">
+          <img
+            class="section__video-preview"
+            src="./images/thumbnails/thumbnail-4.webp"
+            alt=""
+          />
+          <div class="section__time">12:12</div>
+        </div>
         <div class="section__video-info">
           <img
             class="section__video-info__avatar"
@@ -121,12 +208,16 @@
           </div>
         </div>
       </section>
+
       <section class="section">
-        <img
-          class="section__video-preview"
-          src="./images/thumbnails/thumbnail-5.webp"
-          alt=""
-        />
+        <div class="section-img-time">
+          <img
+            class="section__video-preview"
+            src="./images/thumbnails/thumbnail-5.webp"
+            alt=""
+          />
+          <div class="section__time">13:13</div>
+        </div>
         <div class="section__video-info">
           <img
             class="section__video-info__avatar"
@@ -143,12 +234,16 @@
           </div>
         </div>
       </section>
+
       <section class="section">
-        <img
-          class="section__video-preview"
-          src="./images/thumbnails/thumbnail-6.webp"
-          alt=""
-        />
+        <div class="section-img-time">
+          <img
+            class="section__video-preview"
+            src="./images/thumbnails/thumbnail-6.webp"
+            alt=""
+          />
+          <div class="section__time">14:14</div>
+        </div>
         <div class="section__video-info">
           <img
             class="section__video-info__avatar"
@@ -162,12 +257,16 @@
           </div>
         </div>
       </section>
+
       <section class="section">
-        <img
-          class="section__video-preview"
-          src="./images/thumbnails/thumbnail-7.webp"
-          alt=""
-        />
+        <div class="section-img-time">
+          <img
+            class="section__video-preview"
+            src="./images/thumbnails/thumbnail-7.webp"
+            alt=""
+          />
+          <div class="section__time">15:15</div>
+        </div>
         <div class="section__video-info">
           <img
             class="section__video-info__avatar"
@@ -181,12 +280,16 @@
           </div>
         </div>
       </section>
+
       <section class="section">
-        <img
-          class="section__video-preview"
-          src="./images/thumbnails/thumbnail-8.webp"
-          alt=""
-        />
+        <div class="section-img-time">
+          <img
+            class="section__video-preview"
+            src="./images/thumbnails/thumbnail-8.webp"
+            alt=""
+          />
+          <div class="section__time">16:16</div>
+        </div>
         <div class="section__video-info">
           <img
             class="section__video-info__avatar"
